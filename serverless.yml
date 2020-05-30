@@ -14,6 +14,9 @@ provider:
   timeout: 10 # the timeout is 10 seconds (default is 6 seconds)
   stage: dev # setting the env stage to dev, this will be visible in the routes
   region: ap-southeast-1 # AWS region
+  deploymentBucket:
+    name: ${self:service}-deployment-bucket
+    serverSideEncryption: AES256  
 
 
 functions: # add 4 functions for CRUD
@@ -55,3 +58,4 @@ functions: # add 4 functions for CRUD
 
 plugins:
 - serverless-offline # adding the plugin to be able to run the offline emulation
+- serverless-deployment-bucket
