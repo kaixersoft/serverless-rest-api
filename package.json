@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serverless-deployment-bucket": "^1.1.2",
     "serverless-offline": "^6.1.7"
   },
   "dependencies": {
