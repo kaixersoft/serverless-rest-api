@@ -13,8 +13,7 @@ provider:
   memorySize: 128 # set the maximum memory of the Lambdas in Megabytes
   timeout: 10 # the timeout is 10 seconds (default is 6 seconds)
   stage: dev # setting the env stage to dev, this will be visible in the routes
-  region: ap-southeast-1 # AWS region 
-  profile: kaixersoft # AWS credential profile ~/.aws/credentials
+  region: ap-southeast-1 # AWS region
 
 
 functions: # add 4 functions for CRUD
